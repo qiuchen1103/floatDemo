@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>浮动DEMO</title>
+	<style type="text/css">
+		.wrap {
+			position: relative;
+			border: 5px solid #aaa;
+			font-size: 24px;
+		}
+		.fl {
+			width: 200px;
+			height: 200px;
+			border: 1px solid #aaa;
+			background-color: red;
+			float: left;
+		}
+		img {
+			margin: 20px;
+			float: left;
+		}
+		.ab {
+			position: absolute;
+			width: 200px;
+			height: 200px;
+			background-color: blue;
+			bottom: -20px;
+		}
+		.fix1{overflow:hidden; zoom:1;}
+		.fix2{zoom:1;}
+        .fix2:after{
+            display:block; 
+            content:'clear'; 
+            clear:both; 
+            line-height:0;  /*height:0;也可*/
+            visibility:hidden;
+        }
+        .h-center {
+        	float:left;
+		    position:relative;
+		    left:50%;
+        }
+        .h-center .fl {
+        	float:left;
+		    position:relative;
+		    right:50%;
+        }
+        .fl1 {
+        	height: 53px;
+        }
+        .fl2 {
+        	height: 40px;
+        }
+        .fl3 {
+        	height: 80px;
+        }
+        .fl4 {
+        	height: 42px;
+        }
+        .fl5 {
+        	height: 74px;
+        }
+        .fl6 {
+        	height: 61px;
+        }
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="fl"></div>
+		<!-- <div class="ab"></div> -->
+		<!-- <div style="clear:both;"></div> -->
+	</div>
+	<!-- <div class="wrap">
+		<div class="fl fl5">1</div>
+		<div class="fl fl1">2</div>
+		<div class="fl fl2">3</div>
+		<div class="fl fl3">4</div>
+		<div class="fl fl4">5</div>
+		<div class="fl fl5">6</div>
+		<div class="fl fl6">7</div>
+		<div class="fl fl1">8</div>
+		<div class="fl fl2">9</div>
+		<div class="fl fl3">10</div>
+		<div class="fl fl4">11</div>
+		<div class="fl fl5">12</div>
+		<div class="fl fl6">13</div>
+	</div> -->
+	<!-- <div class="wrap">
+		<img src="http://img4.imgtn.bdimg.com/it/u=21385237,1665284751&fm=21&gp=0.jpg">
+		<p>
+			1.会脱离文档流，使周围元素环绕这个浮动元素、要另外多一步清除浮动。2.无法方便地实现水平居中。3.无法实现每行垂直对齐（除非定高）。1.会脱离文档流，使周围元素环绕这个浮动元素、要另外多一步清除浮动。2.无法方便地实现水平居中。3.无法实现每行垂直对齐（除非定高）。1.会脱离文档流，使周围元素环绕这个浮动元素、要另外多一步清除浮动。2.无法方便地实现水平居中。3.无法实现每行垂直对齐（除非定高）。1.会脱离文档流，使周围元素环绕这个浮动元素、要另外多一步清除浮动。2.无法方便地实现水平居中。3.无法实现每行垂直对齐（除非定高）。1.会脱离文档流，使周围元素环绕这个浮动元素、要另外多一步清除浮动。2.无法方便地实现水平居中。3.无法实现每行垂直对齐（除非定高）。1.会脱离文档流，使周围元素环绕这个浮动元素、要另外多一步清除浮动。2.无法方便地实现水平居中。3.无法实现每行垂直对齐（除非定高）。1.会脱离文档流，使周围元素环绕这个浮动元素、要另外多一步清除浮动。2.无法方便地实现水平居中。3.无法实现每行垂直对齐（除非定高）。1.会脱离文档流，使周围元素环绕这个浮动元素、要另外多一步清除浮动。2.无法方便地实现水平居中。3.无法实现每行垂直对齐（除非定高）。1.会脱离文档流，使周围元素环绕这个浮动元素、要另外多一步清除浮动。2.无法方便地实现水平居中。3.无法实现每行垂直对齐（除非定高）。1.会脱离文档流，使周围元素环绕这个浮动元素、要另外多一步清除浮动。2.无法方便地实现水平居中。3.无法实现每行垂直对齐（除非定高）。1.会脱离文档流，使周围元素环绕这个浮动元素、要另外多一步清除浮动。2.无法方便地实现水平居中。3.无法实现每行垂直对齐（除非定高）。1.会脱离文档流，使周围元素环绕这个浮动元素、要另外多一步清除浮动。2.无法方便地实现水平居中。3.无法实现每行垂直对齐（除非定高）。1.会脱离文档流，使周围元素环绕这个浮动元素、要另外多一步清除浮动。2.无法方便地实现水平居中。3.无法实现每行垂直对齐（除非定高）。1.会脱离文档流，使周围元素环绕这个浮动元素、要另外多一步清除浮动。2.无法方便地实现水平居中。3.无法实现每行垂直对齐（除非定高）。1.会脱离文档流，使周围元素环绕这个浮动元素、要另外多一步清除浮动。2.无法方便地实现水平居中。3.无法实现每行垂直对齐（除非定高）。1.会脱离文档流，使周围元素环绕这个浮动元素、要另外多一步清除浮动。2.无法方便地实现水平居中。3.无法实现每行垂直对齐（除非定高）。1.会脱离文档流，使周围元素环绕这个浮动元素、要另外多一步清除浮动。2.无法方便地实现水平居中。3.无法实现每行垂直对齐（除非定高）。
+		</p>
+	</div> -->
+</body>
+</html>
