@@ -28,4 +28,4 @@
     2.水平居中、垂直对齐 轻松实现 ^O^ 。
 
     但新欢也不完美，它有间隙bug。
-    解决：http://www.zhangxinxu.com/wordpress/2012/04/inline-block-space-remove-%E5%8E%BB%E9%99%A4%E9%97%B4%E8%B7%9D/
+    解决：[http://www.zhangxinxu.com/wordpress/2012/04/inline-block-space-remove-%E5%8E%BB%E9%99%A4%E9%97%B4%E8%B7%9D/]
